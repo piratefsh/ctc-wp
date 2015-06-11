@@ -12,6 +12,10 @@ body, html {
   background-color: #eee;
 }
 
+html {
+  height: 100%;
+}
+
 /* ========================================================================
    Component: Base
  ========================================================================== */
@@ -1373,9 +1377,9 @@ iframe {
 .uk-panel-title {
   margin-top: 0;
   margin-bottom: 15px;
-  font-size: 18px;
+  font-size: 24px;
   line-height: 24px;
-  font-weight: normal;
+  font-weight: 700;
   text-transform: none;
   color: #444;
 }
