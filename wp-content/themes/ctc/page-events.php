@@ -5,25 +5,32 @@
 <?php get_template_part('partials/navigation'); ?>
 <div class="uk-container uk-container-center content">
   <div class="uk-grid">
-      <article class="uk-article uk-width-2-3 uk-panel uk-panel-box">
-      <h1 class="uk-article-title"> <?php the_title(); ?> </h1>
-          <div class="uk-grid">
-            <?php get_posts_of_type_query('event', 9);?>
-            <?php if(have_posts()):?>
-                <?php while (have_posts()) : the_post();?>
-                  <div class="uk-width-1-2">
-                    <h4><?php echo get_the_date();?></h4>
-                    <?php the_title();?>
-                    <p><a class="small-link" href="<?php the_permalink();?>">Read more  <i class="fa fa-angle-right"></i></a></p>
-                  </div>
-                <?php endwhile; ?>
-              <div class="pagination">
-                <?php get_listing_pagination(); ?>
+      <div class="uk-width-1-1"><h1 class="margin-bottom"> <?php the_title(); ?> </h1></div>
+      <article class="uk-article uk-width-3-4">
+        <div class="uk-grid uk-grid-medium">
+        <?php get_posts_of_type_query('event', 9);?>
+        <?php if(have_posts()):?>
+            <?php while (have_posts()) : the_post();?>
+              <div class="uk-width-1-2">
+                <div class="uk-panel uk-panel-box panel-event">
+                  <h3 class="uk-panel-title"><?php the_title();?></h3>
+                  <?php echo get_the_date();?></h4>
+                  <p><a class="uk-button" href="<?php the_permalink();?>">Details</a></p>
+                </div>
               </div>
-                <?php wp_reset_postdata(); ?>
-            <?php endif;?>
-            </div>
+            <?php endwhile; ?>
+          <div class="pagination">
+            <?php get_listing_pagination(); ?>
+          </div>
+            <?php wp_reset_postdata(); ?>
+        <?php endif;?>
+        </div>
       </article>
+      <aside class="uk-width-1-4">
+        <div class="uk-panel uk-panel-box uk-panel-box-primary">
+          <h3 class="uk-panel-title">Filter Events</h3>
+        </div>
+      </aside>
     </div>
 </div>
 

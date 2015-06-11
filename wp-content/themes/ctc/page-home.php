@@ -22,7 +22,7 @@
 	</ul>
 </div>
 
-<div class="uk-container uk-container-center">
+<div class="uk-container uk-container-center content">
     <article class="uk-article">
         <div class="uk-grid">
 	        <?php if($post->post_content) :?>
