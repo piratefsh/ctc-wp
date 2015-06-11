@@ -4,11 +4,6 @@
   border: 1px solid #eee;
 }
 
-.uk-article {
-  margin-top: 30px;
-  margin-bottom: 30px;
-}
-
 .uk-navbar-brand {
   padding-left: 0px !important;
 }
@@ -25,6 +20,11 @@ footer {
   background: url(images/patterns/lodyas.png);
   color: #777;
   padding-top: 30px;
+}
+
+.content {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 /* ========================================================================
@@ -1673,7 +1673,7 @@ iframe {
  * Vertical gutter for articles
  */
 .uk-article + .uk-article {
-  margin-top: 30px;
+  margin-top: 25px;
 }
 
 /* Sub-object `uk-article-title`

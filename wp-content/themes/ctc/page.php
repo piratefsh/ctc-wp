@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <?php get_template_part('partials/navigation'); ?>
-<div class="uk-container uk-container-center">
+<div class="uk-container uk-container-center content">
     <article class="uk-article">
 		<h1 class="uk-article-title"> <?php the_title(); ?> </h1>
         <div class="uk-grid">
