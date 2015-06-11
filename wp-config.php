@@ -18,20 +18,31 @@
 /** The name of the database for WordPress */
 define('DB_NAME', 'ctc');
 
-/** MySQL database username */
-define('DB_USER', 'root');
 
-/** MySQL database password */
-define('DB_PASSWORD', '');
+if (isset($_SERVER['SERVER_SOFTWARE']) && strpos($_SERVER['SERVER_SOFTWARE'],'Google App Engine') !== false) {
+    /** Live environment Cloud SQL login and SITE_URL info */
+    /** Note that from App Engine, the password is not required, so leave it blank here */
+    define('DB_HOST', ':/cloudsql/creative-tech-camp:wp-db');
+    define('DB_USER', 'root');
+    define('DB_PASSWORD', '');
+} else {
+    /** Local environment MySQL login info */
+	/** MySQL database username */
+	define('DB_USER', 'root');
 
-/** MySQL hostname */
-define('DB_HOST', '127.0.0.1');
+	/** MySQL database password */
+	define('DB_PASSWORD', '');
+
+	/** MySQL hostname */
+	define('DB_HOST', '127.0.0.1');
+}
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
+
 
 /**#@+
  * Authentication Unique Keys and Salts.
