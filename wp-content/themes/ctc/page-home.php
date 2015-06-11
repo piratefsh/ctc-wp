@@ -28,7 +28,6 @@
 
 <div class="uk-container uk-container-center">
     <article class="uk-article">
-		<h1 class="uk-article-title"> <?php the_title(); ?> </h1>
         <div class="uk-grid">
 	        <?php if($post->post_content) :?>
 	            <?php while ( have_posts() ) : the_post();?>

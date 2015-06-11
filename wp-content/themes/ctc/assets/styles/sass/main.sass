@@ -10,6 +10,7 @@ $color-grey-medium 		: #777
 $color-grey-dark 		: #23282d
 $color-grey-darkest 	: #141517
 $pattern-dark			: url(images/patterns/lodyas.png)
+$pattern-light			: url(images/patterns/geometry.png)
 // Fonts
 $font-heading	: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif
 $font-body		: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif
@@ -33,7 +34,7 @@ $panel-box-background 		: white
 $panel-title-font-weight 	: $bold
 $panel-title-font-size 		: 24px
 .uk-panel-box
-	border: 1px solid $color-grey-light
+	border: 1px solid $color-grey-lightest
 
 // Article
 $article-margin-top 		: $space*1.5
@@ -59,7 +60,8 @@ $navbar-brand-hover-color 		: $color-grey-lightest
 
 // General
 body, html
-	background-color: $color-grey-lightest
+	// background-color: $color-grey-lightest
+	background: $pattern-light
 html
 	height: 100%
 footer 

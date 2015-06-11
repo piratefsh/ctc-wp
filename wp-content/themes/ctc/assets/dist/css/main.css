@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import "http://fonts.googleapis.com/css?family=Montserrat:400:700)";
 .uk-panel-box {
-  border: 1px solid #ccc;
+  border: 1px solid #eee;
 }
 
 .uk-article {
@@ -14,7 +14,7 @@
 }
 
 body, html {
-  background-color: #eee;
+  background: url(images/patterns/geometry.png);
 }
 
 html {
@@ -9460,7 +9460,7 @@ a.uk-thumbnail:focus {
 
 .jumbotron {
   overflow: hidden;
-  height: 350px;
+  height: 380px;
 }
 .jumbotron .items {
   transition: top 0.8s;
@@ -9472,7 +9472,7 @@ a.uk-thumbnail:focus {
 }
 .jumbotron .items li {
   position: relative;
-  height: 350px;
+  height: 380px;
   display: block;
 }
 .jumbotron .tagline {
@@ -9497,7 +9497,7 @@ a.uk-thumbnail:focus {
   bottom: 0px;
 }
 .jumbotron .text .main {
-  font-size: 2.8em;
+  font-size: 3em;
 }
 .jumbotron .text input {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
