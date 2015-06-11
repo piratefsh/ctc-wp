@@ -2,8 +2,8 @@ module.exports = function(grunt) {
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         watch: {
-            files: ['**/*.html', 'assets/**/*.js', 'assets/**/*.html', 'assets/styles/sass/*.sass'],
-            tasks: ['concat', 'sass'],
+            files: ['**/*.php', 'assets/**/*.js', 'assets/styles/sass/**/*.sass'],
+            tasks: ['concat:js', 'sass'],
             options: {
                 livereload: {
                     port: 9006
@@ -24,6 +24,12 @@ module.exports = function(grunt) {
                 ],
                 dest: 'assets/dist/js/dependencies.js'
             },
+            js:{
+                src: [
+                    'assets/scripts/**/*.js'
+                ],
+                dest: 'assets/dist/js/app.js'
+            }
         },
         copy: {
             js: {

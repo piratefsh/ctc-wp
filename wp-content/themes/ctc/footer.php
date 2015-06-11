@@ -1,6 +1,11 @@
-
+<footer class="uk-footer">
+	<div class="uk-container uk-container-center">
+		<p>&copy; CreativeTech Camp Sdn Bhd (1134118-W) 2015.<br/><br/>Website designed and built by <a href="http://piratefsh.github.io">Sher Minn C.</a></p>
+	</div>
+</footer>
 <!-- JS Dependencies -->
 <script src="<?php bloginfo('template_directory'); ?>/assets/dist/js/dependencies.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/assets/dist/js/app.js"></script>
 
 <!-- Livereload watcher -->
 <script src="//localhost:9006/livereload.js"></script>

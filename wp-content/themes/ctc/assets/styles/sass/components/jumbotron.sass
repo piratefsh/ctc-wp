@@ -1,0 +1,89 @@
+.jumbotron
+  overflow: hidden
+  height: 350px
+  .items 
+    transition: top 0.8s
+    list-style-type: none
+    padding: 0px
+    margin: 0px
+    top: 0px
+    position: relative
+    li 
+      position: relative
+      height: 350px
+      display: block
+  .tagline 
+    font-size: 1.4em
+    margin-top: 12px
+    opacity: 1
+    position: relative
+    //bottom: 0px
+    transition: all 0.5s ease-in-out
+  .hide 
+    //bottom: -80px
+    opacity: 0
+  .text 
+    text-shadow: 1px 1px 2px rgba(black, 0.5)
+    color: white
+    padding: 20px
+    padding-left: 40px
+    padding-bottom: 40px
+    background: linear-gradient(transparent, rgba(black, 0.5))
+    width: 100%
+    position: absolute
+    bottom: 0px
+    .main
+      font-size: 2.8em
+    input 
+      text-shadow: 1px 1px 2px rgba(black, 0.6)
+      outline: none
+      background-color: transparent
+      color: white
+      padding-bottom: 3px
+      padding-top: 30px
+      padding-left: 5px
+      padding-right: 5px
+      width: 130px
+      text-align: center
+      border: 0px solid transparent
+      border-bottom: 4px solid #fff
+      &.highlight
+        //color: #FFE47A
+        //font-weight: bold
+        text-shadow: 1px 1px 2px rgba(black,0.8)
+    .input-wrapper
+      margin-right: 8px
+      display: inline-block
+      position: relative
+      &:after, &:before
+        display: block
+        bottom: 0px
+        content: ""
+        height: 10px
+        width: 2px
+        background-color: #fff
+        position: absolute
+      &:before
+        left: 0px
+      &:after 
+        right: 0px
+  .image
+    height: 100%
+    background-size: cover
+    background-image: url("http://www.creativetechcamp.com/camps/images/TechHero/GLOBAL%20MAKEATHON-250-banner.jpg")
+.cursor
+  width: 2px
+  background-color: white
+  height: 36px
+  position: relative
+  &:before, &:after
+    content: ''
+    position: absolute
+    left: -2px
+    width: 6px
+    height: 1px
+    background-color: white
+  &:before 
+    top: 0px
+  &:after
+    bottom: 0px

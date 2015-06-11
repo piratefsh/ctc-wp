@@ -6,6 +6,7 @@
 
 .uk-article {
   margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .uk-navbar-brand {
@@ -18,6 +19,12 @@ body, html {
 
 html {
   height: 100%;
+}
+
+footer {
+  background: url(images/patterns/lodyas.png);
+  color: #777;
+  padding-top: 30px;
 }
 
 /* ========================================================================
@@ -9449,6 +9456,111 @@ a.uk-thumbnail:focus {
  */
 .uk-nav-autocomplete .uk-nav-divider {
   border-top: 1px solid #ddd;
+}
+
+.jumbotron {
+  overflow: hidden;
+  height: 350px;
+}
+.jumbotron .items {
+  transition: top 0.8s;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  top: 0px;
+  position: relative;
+}
+.jumbotron .items li {
+  position: relative;
+  height: 350px;
+  display: block;
+}
+.jumbotron .tagline {
+  font-size: 1.4em;
+  margin-top: 12px;
+  opacity: 1;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+.jumbotron .hide {
+  opacity: 0;
+}
+.jumbotron .text {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px;
+  padding-left: 40px;
+  padding-bottom: 40px;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+}
+.jumbotron .text .main {
+  font-size: 2.8em;
+}
+.jumbotron .text input {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  outline: none;
+  background-color: transparent;
+  color: white;
+  padding-bottom: 3px;
+  padding-top: 30px;
+  padding-left: 5px;
+  padding-right: 5px;
+  width: 130px;
+  text-align: center;
+  border: 0px solid transparent;
+  border-bottom: 4px solid #fff;
+}
+.jumbotron .text input.highlight {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+.jumbotron .text .input-wrapper {
+  margin-right: 8px;
+  display: inline-block;
+  position: relative;
+}
+.jumbotron .text .input-wrapper:after, .jumbotron .text .input-wrapper:before {
+  display: block;
+  bottom: 0px;
+  content: "";
+  height: 10px;
+  width: 2px;
+  background-color: #fff;
+  position: absolute;
+}
+.jumbotron .text .input-wrapper:before {
+  left: 0px;
+}
+.jumbotron .text .input-wrapper:after {
+  right: 0px;
+}
+.jumbotron .image {
+  height: 100%;
+  background-size: cover;
+  background-image: url("http://www.creativetechcamp.com/camps/images/TechHero/GLOBAL%20MAKEATHON-250-banner.jpg");
+}
+
+.cursor {
+  width: 2px;
+  background-color: white;
+  height: 36px;
+  position: relative;
+}
+.cursor:before, .cursor:after {
+  content: "";
+  position: absolute;
+  left: -2px;
+  width: 6px;
+  height: 1px;
+  background-color: white;
+}
+.cursor:before {
+  top: 0px;
+}
+.cursor:after {
+  bottom: 0px;
 }
 
 /*# sourceMappingURL=main.css.map */
