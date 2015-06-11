@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import "http://fonts.googleapis.com/css?family=Raleway:400,300)";
 .uk-panel-box {
   border: 1px solid #ccc;
 }
@@ -9,7 +10,6 @@
 
 body, html {
   background-color: #eee;
-  height: 100%;
 }
 
 /* ========================================================================
@@ -22,7 +22,7 @@ body, html {
  */
 html {
   /* 1 */
-  font: normal 14px / 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal 14px / 20px "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* 2 */
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -2129,7 +2129,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
    Component: Navbar
  ========================================================================== */
 .uk-navbar {
-  background: #23282d;
+  background: url(images/patterns/lodyas.png);
   color: #444;
 }
 
@@ -2180,7 +2180,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   /* 2 */
   color: #ccc;
   font-size: 14px;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
 
@@ -2206,8 +2206,8 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
 
 /* OnClick */
 .uk-navbar-nav > li > a:active {
-  background-color: #ddd;
-  color: #444;
+  background-color: rgba(35, 40, 45, 0.5);
+  color: #eee;
 }
 
 /* Active */

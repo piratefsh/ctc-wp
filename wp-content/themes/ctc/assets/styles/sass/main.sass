@@ -1,11 +1,17 @@
 @import "bower_components/uikit/scss/uikit-mixins.scss"
 
+// Fonts
+@import "http://fonts.googleapis.com/css?family=Raleway:400,300)"
+
 // Colors
 $color-grey-lightest: #eee
 $color-grey-light: #ccc
 $color-grey-medium: #2C3640
 $color-grey-dark: #23282d
 $color-grey-darkest: #141517
+
+// Fonts
+$font-body: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif
 
 // Units
 $space: 20px
@@ -15,6 +21,8 @@ $utility-container-large-max-width: 1000px
 
 // Base
 $base-margin-vertical: $space*1.5
+$base-body-font-family: $font-body
+
 
 // Panel
 $panel-box-padding: $space
@@ -29,18 +37,19 @@ $article-margin-top: $space*1.5
 
 // Navbar
 $navbar-nav-height: 60px
-$navbar-background: $color-grey-dark
+$navbar-background: url(images/patterns/lodyas.png)
 $navbar-nav-color: $color-grey-light
 $navbar-nav-hover-color: $color-grey-lightest
 $navbar-nav-hover-background: transparent
+$navbar-nav-onclick-background: rgba($color-grey-dark, 0.5)
+$navbar-nav-onclick-color: $color-grey-lightest
+$navbar-nav-font-family: $font-body
 $navbar-brand-color: $color-grey-light
 $navbar-brand-hover-color: $color-grey-lightest
 
 // General
 body, html
 	background-color: $color-grey-lightest
-	height: 100%
-
 
 @import "bower_components/uikit/scss/uikit.scss"
 @import "bower_components/uikit/scss/components/autocomplete.scss" 

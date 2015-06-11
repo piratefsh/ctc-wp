@@ -37,7 +37,7 @@ module.exports = function(grunt) {
                     }
                 ]
             },
-            css: {
+            fonts: {
                 files: [
                     {
                         expand: true,
@@ -47,6 +47,20 @@ module.exports = function(grunt) {
                             'bower_components/fontawesome/css/*.map'
                             ], 
                         dest: 'assets/styles/fonts/'
+
+                    }
+
+                ]
+            },
+            images: {
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'assets/images/css',
+                        src: [
+                            '**',
+                            ], 
+                        dest: 'assets/dist/css/images/'
 
                     }
 
