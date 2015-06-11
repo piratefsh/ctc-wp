@@ -1,0 +1,21 @@
+{
+  "name": "ctc",
+  "version": "0.0.1",
+  "authors": [
+    "Sher Minn Chong <sherminn.chong@gmail.com>"
+  ],
+  "description": "Creative Tech Camp WP theme",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "uikit": "~2.21.0",
+    "normalize": "~1.0.4",
+    "fontawesome": "~4.3.0"
+  }
+}

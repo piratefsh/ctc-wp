@@ -25,9 +25,11 @@
                 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=0.5, maximum-scale=1.0">
                 <meta name="apple-mobile-web-app-capable" content="yes">
 
-                <!-- Normalize CSS -->
-                <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/styles/vendor/normalize.css">
-                <!-- <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/dist/concat.min.css"> -->
+                <!--Dependencies for CSS -->
+                <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/dist/css/dependencies.css">
+                <!--Styles -->
+                <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/assets/dist/css/main.css">
+                
                 <!-- <link rel="icon" href="<?php bloginfo('template_directory'); ?>/assets/images/favicon.ico"> -->
                 
                 <?php wp_head(); ?>

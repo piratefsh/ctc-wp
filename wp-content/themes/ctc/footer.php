@@ -1,9 +1,9 @@
 
-<!-- Concated JS -->
-<!-- <script src="<?php bloginfo('template_directory'); ?>/js/dist/concat.js"></script>-->
+<!-- JS Dependencies -->
+<script src="<?php bloginfo('template_directory'); ?>/assets/dist/js/dependencies.js"></script>
 
 <!-- Livereload watcher -->
-<!-- <script src="//localhost:35729/livereload.js"></script> -->
+<script src="//localhost:9006/livereload.js"></script>
 <?php wp_footer(); ?>
 
 <!-- Google Analytics -->
