@@ -1,13 +1,33 @@
 @import "bower_components/uikit/scss/uikit-mixins.scss"
 
-// your custom code goes here, e .g. mixins, variables
-// colors
+// Colors
 $color-grey-lightest: #eee
 $color-grey-light: #ccc
 $color-grey-medium: #2C3640
 $color-grey-dark: #23282d
 $color-grey-darkest: #141517
 
+// Units
+$space: 20px
+
+// Utilities
+$utility-container-large-max-width: 1000px
+
+// Base
+$base-margin-vertical: $space*1.5
+
+// Panel
+$panel-box-padding: $space
+$panel-box-background: white
+.uk-panel-box
+	border: 1px solid $color-grey-light
+
+// Article
+$article-margin-top: $space*1.5
+.uk-article
+	margin-top: $article-margin-top
+
+// Navbar
 $navbar-nav-height: 60px
 $navbar-background: $color-grey-dark
 $navbar-nav-color: $color-grey-light
@@ -15,6 +35,11 @@ $navbar-nav-hover-color: $color-grey-lightest
 $navbar-nav-hover-background: transparent
 $navbar-brand-color: $color-grey-light
 $navbar-brand-hover-color: $color-grey-lightest
+
+// General
+body, html
+	background-color: $color-grey-lightest
+	height: 100%
 
 
 @import "bower_components/uikit/scss/uikit.scss"

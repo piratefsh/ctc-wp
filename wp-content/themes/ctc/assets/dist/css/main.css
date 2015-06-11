@@ -1,4 +1,17 @@
 @charset "UTF-8";
+.uk-panel-box {
+  border: 1px solid #ccc;
+}
+
+.uk-article {
+  margin-top: 30px;
+}
+
+body, html {
+  background-color: #eee;
+  height: 100%;
+}
+
 /* ========================================================================
    Component: Base
  ========================================================================== */
@@ -207,7 +220,7 @@ pre,
 address,
 fieldset,
 figure {
-  margin: 0 0 15px 0;
+  margin: 0 0 30px 0;
 }
 
 * + p,
@@ -219,13 +232,13 @@ figure {
 * + address,
 * + fieldset,
 * + figure {
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 /* Headings
  ========================================================================== */
 h1, h2, h3, h4, h5, h6 {
-  margin: 0 0 15px 0;
+  margin: 0 0 30px 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
   color: #444;
@@ -316,7 +329,7 @@ hr {
   box-sizing: content-box;
   height: 0;
   /* 2 */
-  margin: 15px 0;
+  margin: 30px 0;
   border: 0;
   border-top: 1px solid #ddd;
 }
@@ -1385,8 +1398,8 @@ iframe {
 /* Modifier: `uk-panel-box`
  ========================================================================== */
 .uk-panel-box {
-  padding: 15px;
-  background: #f5f5f5;
+  padding: 20px;
+  background: white;
   color: #444;
 }
 
@@ -1404,16 +1417,16 @@ iframe {
 }
 
 .uk-panel-box .uk-panel-teaser {
-  margin-top: -15px;
-  margin-left: -15px;
-  margin-right: -15px;
+  margin-top: -20px;
+  margin-left: -20px;
+  margin-right: -20px;
 }
 
 /*
  * Nav in panel
  */
 .uk-panel-box > .uk-nav-side {
-  margin: 0 -15px;
+  margin: 0 -20px;
 }
 
 /*
@@ -1645,7 +1658,7 @@ iframe {
  * Vertical gutter for articles
  */
 .uk-article + .uk-article {
-  margin-top: 25px;
+  margin-top: 30px;
 }
 
 /* Sub-object `uk-article-title`
@@ -8291,7 +8304,7 @@ a.uk-thumbnail:focus {
 /* Large screen and bigger */
 @media (min-width: 1220px) {
   .uk-container {
-    max-width: 1200px;
+    max-width: 1000px;
     padding: 0 35px;
   }
 }
