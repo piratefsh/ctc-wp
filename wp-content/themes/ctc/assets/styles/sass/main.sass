@@ -1,7 +1,7 @@
 @import "bower_components/uikit/scss/uikit-mixins.scss"
 
 // Fonts
-@import "http://fonts.googleapis.com/css?family=Raleway:400,300)"
+@import "http://fonts.googleapis.com/css?family=Montserrat:400:700)"
 
 // Colors
 $color-grey-lightest: #eee
@@ -11,10 +11,11 @@ $color-grey-dark: #23282d
 $color-grey-darkest: #141517
 
 // Fonts
-$font-body: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif
+$font-body: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif
 
 // Units
 $space: 20px
+$bold: 700
 
 // Utilities
 $utility-container-large-max-width: 1000px
@@ -22,7 +23,8 @@ $utility-container-large-max-width: 1000px
 // Base
 $base-margin-vertical: $space*1.5
 $base-body-font-family: $font-body
-
+$base-heading-font-weight:  $bold
+$base-heading-font-family: $font-body
 
 // Panel
 $panel-box-padding: $space
@@ -32,6 +34,7 @@ $panel-box-background: white
 
 // Article
 $article-margin-top: $space*1.5
+$article-title-font-weight: $bold
 .uk-article
 	margin-top: $article-margin-top
 

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import "http://fonts.googleapis.com/css?family=Raleway:400,300)";
+@import "http://fonts.googleapis.com/css?family=Montserrat:400:700)";
 .uk-panel-box {
   border: 1px solid #ccc;
 }
@@ -22,7 +22,7 @@ body, html {
  */
 html {
   /* 1 */
-  font: normal 14px / 20px "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal 14px / 20px "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   /* 2 */
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -239,8 +239,8 @@ figure {
  ========================================================================== */
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 30px 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 700;
   color: #444;
   text-transform: none;
 }
@@ -1666,7 +1666,7 @@ iframe {
 .uk-article-title {
   font-size: 36px;
   line-height: 42px;
-  font-weight: normal;
+  font-weight: 700;
   text-transform: none;
 }
 
@@ -2180,7 +2180,7 @@ html:not(.uk-touch) .uk-nav-offcanvas ul a:hover {
   /* 2 */
   color: #ccc;
   font-size: 14px;
-  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: normal;
 }
 
