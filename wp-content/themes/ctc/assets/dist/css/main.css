@@ -8,6 +8,10 @@
   margin-top: 30px;
 }
 
+.uk-navbar-brand {
+  padding-left: 0px !important;
+}
+
 body, html {
   background-color: #eee;
 }
