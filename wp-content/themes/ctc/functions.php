@@ -70,5 +70,28 @@
       echo paginate_links($args);
     }
 
+    // Shortcodes
+    function events_featured_sc($attr) {
+      ob_start();
+      include('partials/events/featured.php');
+      $partial = ob_get_contents();
+      ob_end_clean();
+      return $partial;
+    }
+    function testimonials_sc($attr) {
+      ob_start();
+      include('partials/testimonials.php');
+      $partial = ob_get_contents();
+      ob_end_clean();
+      return $partial;
+    }
+
+    function register_shortcodes() {
+      add_shortcode('events-featured', 'events_featured_sc');
+      add_shortcode('testimonials', 'testimonials_sc');
+    }
+
+    add_action('init', 'register_shortcodes');
+
 
 ?>

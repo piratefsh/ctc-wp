@@ -26,6 +26,10 @@ footer {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+.content.home {
+  max-width: 100%;
+  margin: 0px;
+}
 
 .panel-event {
   height: 180px;

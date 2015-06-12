@@ -22,15 +22,13 @@
 	</ul>
 </div>
 
-<div class="uk-container uk-container-center content">
+<div class="uk-container-center content home">
     <article class="uk-article">
-        <div class="uk-grid">
-	        <?php if($post->post_content) :?>
-	            <?php while ( have_posts() ) : the_post();?>
-	                <?php the_content(); ?>
-	            <?php endwhile; ?>
-	        <?php endif;?>
-        </div>
+        <?php if($post->post_content) :?>
+            <?php while ( have_posts() ) : the_post();?>
+                <?php the_content(); ?>
+            <?php endwhile; ?>
+        <?php endif;?>
     </article>
 </div>
 
