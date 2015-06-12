@@ -50,10 +50,9 @@ module.exports = function(grunt) {
                         expand: true,
                         flatten: true,
                         src: [
-                            'bower_components/fontawesome/fonts/*',
-                            'bower_components/fontawesome/css/*.map'
+                            'bower_components/uikit/fonts/*',
                             ], 
-                        dest: 'assets/styles/fonts/'
+                        dest: 'assets/dist/fonts/'
 
                     }
 

@@ -11,7 +11,7 @@
       </article>
       <aside class="uk-width-1-4">
         <div class="uk-panel uk-panel-box uk-panel-box-primary">
-          <h3 class="uk-panel-title">Filter Events</h3>
+          <h4 class="uk-panel-title">Search</h4>
         </div>
       </aside>
     </div>

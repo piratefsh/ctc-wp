@@ -48,7 +48,13 @@ footer {
   border: 1px solid #ccc;
 }
 
-.testimonials > li {
+.testimonials {
+  margin-top: 40px;
+}
+.testimonials ul:first-child {
+  margin-bottom: 20px;
+}
+.testimonials ul:first-child > li {
   height: 200px;
 }
 
@@ -9867,6 +9873,7 @@ a.uk-thumbnail:focus {
 .jumbotron .image {
   height: 100%;
   background-size: cover;
+  background-color: #888;
 }
 
 .cursor {
