@@ -4,7 +4,7 @@
       <?php while ($events->have_posts()) : $events->the_post();?>
         <div class="uk-width-1-2">
           <div class="uk-panel uk-panel-box panel-event">
-            <h3 class="uk-panel-title"><?php the_title();?></h3>
+            <h3 class="uk-panel-title"><a  href="<?php the_permalink();?>"><?php the_title();?></a></h3>
             <?php echo get_the_date();?></h4>
             <p><a class="uk-button" href="<?php the_permalink();?>">Details</a></p>
           </div>

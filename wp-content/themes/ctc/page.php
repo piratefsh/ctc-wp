@@ -2,7 +2,7 @@
 
 <?php get_template_part('partials/navigation'); ?>
 <div class="uk-container uk-container-center content">
-    <article class="uk-article">
+    <article class="uk-article uk-height-1-1">
 		<h1 class="uk-article-title"> <?php the_title(); ?> </h1>
         <div class="uk-grid">
 	        <?php if($post->post_content) :?>

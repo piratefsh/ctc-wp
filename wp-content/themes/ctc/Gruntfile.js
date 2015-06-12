@@ -21,6 +21,7 @@ module.exports = function(grunt) {
                 src: [
                     'bower_components/jquery/dist/jquery.min.js',
                     'bower_components/uikit/js/uikit.min.js',
+                    'bower_components/uikit/js/components/slideset.min.js',
                 ],
                 dest: 'assets/dist/js/dependencies.js'
             },

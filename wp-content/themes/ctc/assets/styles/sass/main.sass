@@ -33,8 +33,14 @@ $panel-box-padding 			: $space
 $panel-box-background 		: white
 $panel-title-font-weight 	: $bold
 $panel-title-font-size 		: 24px
+$panel-title-color			: #444
 .uk-panel-box
 	border: 1px solid $color-grey-lightest
+	margin-bottom: $space !important
+.uk-panel-title a 
+	color: $panel-title-color
+	&:hover
+		color: $panel-title-color
 
 // Article
 $article-title-font-weight 	: $bold
@@ -52,6 +58,9 @@ $navbar-brand-color 			: $color-grey-light
 $navbar-brand-hover-color 		: $color-grey-lightest
 .uk-navbar-brand
 	padding-left: 0px !important
+
+// Definition List
+$description-list-line-border-width: 0px
 
 // General
 body, html
@@ -76,13 +85,26 @@ $content-margin-bottom 		: $space*1.5
 .panel-event
 	height: 180px
 
+// Testimonials
+$dotnav-width:  15px
+.comment-avatar-testimonial
+	width: 60px
+	border: 1px solid $color-grey-light
+.testimonials
+	> li 
+		height: 200px
+
 // Utility Classes
 .margin-bottom
 	margin-bottom: $space*1.5 !important
+.border-top
+	border-top: 1px solid $color-grey-lightest
 
 
 @import "bower_components/uikit/scss/uikit.scss"
 @import "bower_components/uikit/scss/components/autocomplete.scss" 
+@import "bower_components/uikit/scss/components/dotnav.scss" 
+@import "bower_components/uikit/scss/components/slideshow.scss" 
 
 // My Styles
 @import "assets/styles/sass/components/jumbotron.sass"

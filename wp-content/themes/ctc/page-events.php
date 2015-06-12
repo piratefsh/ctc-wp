@@ -7,9 +7,7 @@
   <div class="uk-grid">
       <div class="uk-width-1-1"><h1 class="margin-bottom"> <?php the_title(); ?> </h1></div>
       <article class="uk-article uk-width-3-4">
-        <div class="uk-grid uk-grid-medium">
-          <?php echo do_shortcode('[events-featured]'); ?>
-        </div>
+        <?php echo do_shortcode('[events-featured]'); ?>
       </article>
       <aside class="uk-width-1-4">
         <div class="uk-panel uk-panel-box uk-panel-box-primary">
