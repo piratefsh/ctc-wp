@@ -1,23 +1,27 @@
 $(function(){
-  var $input = $('input.animated')
-  var textAfter = $input.attr('data-text-after');
-  function backspace(){
+  var $inputs = $('input.animated');
+  
+  function backspace($input){
     $input.removeClass('highlight');
-    var currText = $input.val();
-    var interval = setInterval(function(){
-      if(currText){
-        currText = currText.substring(0, currText.length - 1);
-        $input.val(currText);
-      }
-      else{
-        clearInterval(interval);
-        
-        setTimeout(function(){
-          typeIn($input, textAfter);
-        }, 800);
-        
-      }
-    }, 180);
+    var currText = $input.attr('data-text-before');
+    var textAfter = $input.attr('data-text-after');
+    $input.val(currText);
+
+    setTimeout(function(){
+      var interval = setInterval(function(){
+        if(currText){
+          currText = currText.substring(0, currText.length - 1);
+          $input.val(currText);
+        }
+        else{
+          clearInterval(interval);
+          setTimeout(function(){
+            typeIn($input, textAfter);
+          }, 800);
+          
+        }
+      }, 200);
+    },1500)
   }
   
   function typeIn($input, message){
@@ -37,5 +41,14 @@ $(function(){
       }
     }, 250);
   }
-  setTimeout(backspace, 1500);
+
+  $inputs.each(function(index){
+    console.log(index)
+    var elem = this
+    backspace($(elem));
+    setInterval(function(){
+      backspace($(elem));
+    }, 6000)
+  });
+
 })

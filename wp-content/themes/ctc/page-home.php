@@ -4,7 +4,7 @@
 
 <?php get_template_part('partials/navigation'); ?>
 
-<div class="jumbotron" data-uk-slideset="{default: 1, animation: 'slide-horizontal', duration: 500, autoplay: true, autoplayInterval: 5000}">
+<div class="jumbotron" data-uk-slideset="{default: 1, animation: 'slide-horizontal', duration: 500, autoplay: true, autoplayInterval: 6000}">
 	<ul class="items uk-slideset" > 
 		<?php foreach(get_banners() as $b): ?>
 		<li>
@@ -13,7 +13,10 @@
 					<div class="uk-container uk-container-center">
 			      <div class="main">
 			        <div class="input-wrapper">
-			          <input value="<?php echo $b['banner_before_word'];?>" data-text-after="<?php echo $b['banner_after_word'];?>" type="text" class="animated"/>
+			          <input value="<?php echo $b['banner_before_word'];?>" 
+			          		data-text-before="<?php echo $b['banner_before_word'];?>" 
+			          		data-text-after="<?php echo $b['banner_after_word'];?>" 
+			          		type="text" class="animated"/>
 			        </div><span><?php echo $b['banner_tagline'];?></span>
 			      </div>
 			      <div class="tagline hide"><?php echo $b['banner_subtagline'];?></div>
