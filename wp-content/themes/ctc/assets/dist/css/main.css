@@ -53,6 +53,13 @@ footer {
   text-decoration: none;
 }
 
+.uk-panel h1, .uk-panel h2, .uk-panel h3, .uk-panel h4, .uk-panel h5 {
+  margin: 20px 0px 10px 0px;
+}
+.uk-panel .uk-panel-title {
+  margin-top: 0px;
+}
+
 .panel-event {
   height: 180px;
 }

@@ -1,4 +1,4 @@
-<div class="uk-grid uk-grid-medium">
+<div class="uk-grid uk-grid-small">
   <?php $events = get_posts_of_type('event', 4);?>
   <?php if($events->have_posts()):?>
       <?php while ($events->have_posts()) : $events->the_post();?>
