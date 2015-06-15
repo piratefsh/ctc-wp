@@ -1,13 +1,9 @@
 $(function(){
-  var textBefore = "Play";
-  var textAfter = "Make";
   var $input = $('input.animated')
-  $input.val(textBefore);
+  var textAfter = $input.attr('data-text-after');
   function backspace(){
-    //$input.val(textBefore);
     $input.removeClass('highlight');
-    var currText = textBefore;
-    //$input.focus();
+    var currText = $input.val();
     var interval = setInterval(function(){
       if(currText){
         currText = currText.substring(0, currText.length - 1);
@@ -38,12 +34,6 @@ $(function(){
         setTimeout(function(){    
           $input.blur();   
         }, 3000);
-        setTimeout(function(){
-          $input.val(textBefore);
-          setTimeout(function(){  
-            backspace();
-          }, 1000);
-        }, 1000);
       }
     }, 250);
   }

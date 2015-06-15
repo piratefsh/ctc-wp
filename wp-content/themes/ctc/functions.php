@@ -125,5 +125,10 @@ function get_testimonials(){
     return $values;
 }
 
+function get_banners(){
+    $values = simple_fields_fieldgroup('banner');
+    return $values;
+}
+
 
 ?>

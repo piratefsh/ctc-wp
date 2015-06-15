@@ -103,27 +103,6 @@ $dotnav-width:  15px
 .border-top
 	border-top: 1px solid $color-grey-lightest
 
-.image-bg
-	background-size: cover !important
-	background-position: center
-	background-repeat: no-repeat
-	position: relative 
-	background-image: url("/ctcwp/wp-content/uploads/2015/06/GLOBAL-MAKEATHON-326-1200x800-e1434358272668.jpg") !important
-	z-index: 1
-	&:before
-		background: rgba(white, 0.7)
-		z-index: 0
-		content: ''
-		top: 0px
-		bottom: 0px
-		width: 100%
-		position: absolute 
-		display: block !important
-	> *
-		z-index: 2
-		position: relative
-		padding: $space*2 !important
-
 @import "bower_components/uikit/scss/uikit.scss"
 @import "bower_components/uikit/scss/components/autocomplete.scss" 
 @import "bower_components/uikit/scss/components/dotnav.scss" 

@@ -4,22 +4,26 @@
 
 <?php get_template_part('partials/navigation'); ?>
 
-<div class="jumbotron">
-	<ul class="items"> 
-	  <li>
-	    <div class="image"></div>
-		    <div class="text"> 
-	    		<div class="uk-container uk-container-center">
-		      <div class="main">
-		        <div class="input-wrapper">
-		          <input value="" type="text" class="animated"/>
-		        </div><span>a game</span>
-		      </div>
-		      <div class="tagline hide">Challenge your mind to design, create, and build. </div>
-		    </div>
-	    </div>
-	  </li>
+<div class="jumbotron" data-uk-slideset="{default: 1, animation: 'slide-horizontal', duration: 500, autoplay: true, autoplayInterval: 5000}">
+	<ul class="items uk-slideset" > 
+		<?php foreach(get_banners() as $b): ?>
+		<li>
+			<div class="image" style="background-image:url(<?php echo $b['banner_photo']['url'];?>)"></div>
+			    <div class="text"> 
+					<div class="uk-container uk-container-center">
+			      <div class="main">
+			        <div class="input-wrapper">
+			          <input value="<?php echo $b['banner_before_word'];?>" data-text-after="<?php echo $b['banner_after_word'];?>" type="text" class="animated"/>
+			        </div><span><?php echo $b['banner_tagline'];?></span>
+			      </div>
+			      <div class="tagline hide"><?php echo $b['banner_subtagline'];?></div>
+			    </div>
+			</div>
+		</li>
+		<?php endforeach; ?>
 	</ul>
+
+	<ul class="indicators uk-slideset-nav uk-dotnav uk-dotnav-contrast uk-float-right"></ul>
 </div>
 
 <div class="uk-container-center content home">
