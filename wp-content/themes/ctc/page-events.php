@@ -32,6 +32,9 @@
               <label><input type="checkbox"/> 11- 13</label><br/>
               <label><input type="checkbox"/> 14 - 16</label><br/>
             </div>
+            <div class="uk-form-row" data-uk-margin>
+              <input type="submit" val="Search" class="uk-button uk-button-primary "/>
+            </div>
           </form>
         </div>
       </aside>
