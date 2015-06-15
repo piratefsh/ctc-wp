@@ -43,6 +43,16 @@ footer {
   padding: 40px;
 }
 
+.social-media a {
+  color: #23282d;
+}
+.social-media a i {
+  margin-right: 10px;
+}
+.social-media a:hover {
+  text-decoration: none;
+}
+
 .panel-event {
   height: 180px;
 }
@@ -1676,7 +1686,7 @@ iframe {
  * Secondary
  */
 .uk-block-secondary {
-  background: #222;
+  background: #eee;
 }
 
 /*
@@ -9805,7 +9815,7 @@ a.uk-thumbnail:focus {
 .jumbotron .indicators {
   position: absolute;
   right: 30px;
-  bottom: 0px;
+  bottom: -10px;
 }
 .jumbotron .items {
   transition: top 0.8s;

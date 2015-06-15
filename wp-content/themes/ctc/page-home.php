@@ -41,8 +41,8 @@
 
 <section class="uk-block-primary cta">
 	<div class="uk-container-center uk-text-center uk-contrast">
-		<h2>Choose a creative tech camp<br/> for your child now</h2>
-		<a class="uk-button uk-button-muted uk-button-large" href="/events">View Camps</a>
+		<h2>Let's get started, check out <br/>our camps and events</h2>
+		<a class="uk-button uk-button-muted uk-button-large" href="/events">Let's go!</a>
 	</div>
 </section>
 

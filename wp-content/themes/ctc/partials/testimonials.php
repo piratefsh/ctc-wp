@@ -1,4 +1,4 @@
-<div class="testimonials" data-uk-slideset="{default: 2, animation: 'fade', duration: 400}">
+<div class="testimonials" data-uk-slideset="{small: 1, medium:2, large: 2, animation: 'fade', duration: 400}">
   <ul class="uk-grid uk-slideset">
   <?php foreach(get_testimonials() as $t): ?>
     <!-- set items -->

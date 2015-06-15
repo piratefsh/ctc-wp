@@ -3,7 +3,7 @@
 <?php get_template_part('partials/navigation'); ?>
 <div class="uk-container uk-container-center content">
 	<div class="uk-grid">
-	    <article class="uk-article uk-width-2-3">
+	    <article class="uk-article uk-width-medium-2-3 uk-width-small-1-1">
 	    <h1 class="uk-article-title"> <?php the_title(); ?> </h1>
 	        <?php if($post->post_content) :?>
 	            <?php while ( have_posts() ) : the_post();?>
@@ -11,7 +11,7 @@
 	            <?php endwhile; ?>
 	        <?php endif;?>
 	    </article>
-	    <aside class="uk-width-1-3 ">
+	    <aside class="uk-width-medium-1-3 uk-width-small-1-1">
 		    <div class="uk-panel uk-panel-box">
 		    	<h3> Sessions</h3>
 		    	<?php if(!has_event_sessions()):?>

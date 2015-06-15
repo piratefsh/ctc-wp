@@ -7,6 +7,7 @@
 $color-grey-lightest	: #eee
 $color-grey-light 		: #ccc
 $color-grey-medium 		: #777
+$color-grey-medium-dark : #555
 $color-grey-dark 		: #23282d
 $color-grey-darkest 	: #141517
 $pattern-dark			: url(images/patterns/lodyas.png)
@@ -41,6 +42,9 @@ $panel-title-color			: #444
 	color: $panel-title-color
 	&:hover
 		color: $panel-title-color
+
+// Blocks
+$block-secondary-background: $color-grey-lightest
 
 // Article
 $article-title-font-weight 	: $bold
@@ -84,6 +88,14 @@ $content-margin-bottom 		: $space*1.5
 
 .cta 
 	padding: $space * 2
+
+.social-media
+	a
+		color: $color-grey-dark
+		i
+			margin-right: $space/2 
+		&:hover 
+			text-decoration: none
 
 .panel-event
 	height: 180px
