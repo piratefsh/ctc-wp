@@ -25,6 +25,8 @@ if (isset($_SERVER['SERVER_SOFTWARE']) && strpos($_SERVER['SERVER_SOFTWARE'],'Go
     define('DB_HOST', ':/cloudsql/creative-tech-camp:wp-db');
     define('DB_USER', 'root');
     define('DB_PASSWORD', '');
+	define('WP_SITEURL', 'http://creative-tech-camp.appspot.com');
+	define('WP_HOME', 'http://creative-tech-camp.appspot.com');
 } else {
     /** Local environment MySQL login info */
 	/** MySQL database username */
@@ -42,6 +44,7 @@ define('DB_CHARSET', 'utf8');
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
+
 
 
 /**#@+

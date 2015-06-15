@@ -1,5 +1,5 @@
 <div class="uk-grid uk-grid-medium">
-  <?php $events = get_posts_of_type('event', 9);?>
+  <?php $events = get_posts_of_type('event', 4);?>
   <?php if($events->have_posts()):?>
       <?php while ($events->have_posts()) : $events->the_post();?>
         <div class="uk-width-1-2">
