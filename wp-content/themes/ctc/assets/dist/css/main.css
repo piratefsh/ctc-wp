@@ -39,6 +39,10 @@ footer {
   margin: 0px;
 }
 
+.cta {
+  padding: 40px;
+}
+
 .panel-event {
   height: 180px;
 }
