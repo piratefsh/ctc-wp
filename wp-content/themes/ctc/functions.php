@@ -130,5 +130,14 @@ function get_banners(){
     return $values;
 }
 
+function get_dates($start, $end){
+    $start_str  = $start['date_format'];
+    $end_str    = $end['date_format'];
+    if(strcmp($start_str, $end_str) == 0){
+        return $start_str;
+    }
+    return $start_str . ' - ' . $end_str;
+}
+
 
 ?>

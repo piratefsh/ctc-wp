@@ -24,7 +24,7 @@
 			    			Date
 			    		</dt>
 			    		<dd>
-			    			<?php echo $session['event_session_start']['date_format'] ?> - <?php echo $session['event_session_end']['date_format'] ?>
+			    			<?php echo get_dates($session['event_session_start'], $session['event_session_end']);?>
 			    		</dd>
 
 			    		<dt>
